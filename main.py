@@ -1,11 +1,22 @@
 import operacoes
 from grafo import Grafo
 
-print('Exercicio 1: ')
+operacoes.buscaBFS('tests/teste.txt', 2)
+print()
+operacoes.cicloEuler(Grafo.ler('tests/teste.txt'))
+print()
+operacoes.dijkstra('tests/teste.txt', 2)
+print()
+operacoes.warshall('tests/teste.txt')
+print()
+operacoes.componentesFC(Grafo.ler('tests/dirigido2.net'))
+print()
+operacoes.ordenacao(Grafo.ler('tests/manha.net'))
+print()
+operacoes.arvoreMinima(Grafo.ler('tests/agm_tiny.net'))
+print()
 operacoes.maxFlow(Grafo.lerGR('tests/fluxo_maximo/wiki.gr'))
-
-print('\nExercicio 2: ')
+print()
 operacoes.maxMatching(Grafo.lerGR('tests/emparelhamento_maximo/pequeno.gr'))
-
-print('\nExercicio 3: ')
+print()
 operacoes.greedyColoring(Grafo.lerGR('tests/teste.gr'))
